@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'voice_bot'
+package_name = 'trial_pkg'
 
 setup(
     name=package_name,
@@ -16,10 +16,11 @@ setup(
     maintainer='husarion',
     maintainer_email='husarion@todo.todo',
     description='TODO: Package description',
-    license='Apache-2.0',
+    license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+        	'rosbot_controller = trial_pkg.rosbot_controller:main',
         ],
     },
 )
